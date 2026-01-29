@@ -1,0 +1,156 @@
+/* Large screens tweaks */
+@media screen and (max-width: 1400px) {
+  section {
+    padding: 4rem 8%;
+  }
+}
+
+/* Tablets & small laptops */
+@media screen and (max-width: 1024px) {
+  #profile {
+    gap: 2.5rem;
+  }
+
+  #about {
+    margin: 2.5rem 6%;
+    padding: 3.5rem 5%;
+  }
+
+  .section-container {
+    gap: 2rem;
+  }
+}
+
+/* Tablets & big phones */
+@media screen and (max-width: 900px) {
+
+  /* switch to hamburger nav */
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--glass-border);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  section {
+    padding: 4rem 7%;
+  }
+
+  #profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    /* Allow growth */
+    margin-top: 5rem;
+  }
+
+  /* Center everything in profile */
+  #profile .section__text {
+    align-items: center;
+  }
+
+  #profile .section__text__p1,
+  #profile .title,
+  #profile .section__text__p2 {
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  .section__pic-container img {
+    width: 275px;
+    height: 275px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container p {
+    text-align: left;
+    /* Keep long text left aligned for readability */
+  }
+
+  .experience-details-container .about-containers {
+    justify-content: center;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 360px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 600px) {
+  section {
+    padding: 3.25rem 4%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  #profile .title {
+    font-size: 2.1rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  #profile .section__pic-container,
+  #profile .section__pic-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .btn-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about-containers {
+    flex-direction: column;
+  }
+
+  .color-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  footer {
+    padding: 1.5rem 6% 2rem;
+    height: auto;
+  }
+
+  .nav-links-container .nav-links {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+  }
+}

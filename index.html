@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kisilu Paul Nzioki Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Kisilu Paul Nzioki</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Kisilu Paul Nzioki</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-new.jpg" alt="Kisilu Paul Nzioki profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Kisilu Paul Nzioki</h1>
+      <p class="section__text__p2">Business & IT Professional</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('https://docs.google.com/document/d/1kMSXWFDbxFzooLtIo_NBIKmRsHeyfjGz/edit?usp=drive_link&ouid=113643273948509927214&rtpof=true&sd=true')">
+          View CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/paul-kisilu-0817a4271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/Kisilupaul12'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/profile1.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Software Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc.Business Information Technology<br />Dedan Kimathi University of Technology</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A results-driven Business Information Technology professional specializing in Cybersecurity and Machine Learning, with proven skills in programming, networking, and database administration. Experienced in hardware maintenance and network configuration across diverse operational environments. Currently developing an AI-driven NLP project, focused on secure and impactful real-world applications.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Back-End Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MYSQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node JS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects & Documents</h1>
+    <div class="experience-details-container">
+      
+      <!-- RESUMES SECTION -->
+      <h2 class="projects-category-title">Academic Resumes</h2>
+      <div class="about-containers projects-grid">
+        
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/pdf.png" alt="English Resume" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">English Resume</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/document/d/1kMSXWFDbxFzooLtIo_NBIKmRsHeyfjGz/edit?usp=drive_link&ouid=113643273948509927214&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/pdf.png" alt="Kiswahili Resume" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Kiswahili Resume</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/document/d/1AIJRII4Sbpi889MD46Xs88m67vnNzZ5P/edit?usp=drive_link&ouid=113643273948509927214&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/pdf.png" alt="Kamba Resume" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Kamba Resume</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/document/d/1ON2KeIPoYsUjG6Xdf956PMg3eWriAOFx/edit?usp=drive_link&ouid=113643273948509927214&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/pdf.png" alt="Autobiographical Essay" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Autobiographical Essay</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://docs.google.com/document/d/1P1Zf5dvQgNjr1XfoAYDnl1RFAUTFW9BU/edit?usp=drive_link&ouid=113643273948509927214&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/powerpoint.png" alt="Autobiographical Presentation" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Presentation of Autobiographical Essay</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://docs.google.com/presentation/d/1kcslewuMIhmhyyduon2rMH5Zvf8d8OsK/edit?usp=sharing&ouid=110003420342366412363&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/powerpoint.png" alt="Photographic Essay" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Photographic Essay</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://docs.google.com/document/d/1Alq4-cCRzGnfG3ru1jdvVAHTGhHmvkiz/edit?usp=sharing&ouid=110003420342366412363&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- INNOVATION IN IT SECTION -->
+      <h2 class="projects-category-title">Innovation in IT</h2>
+      <div class="about-containers projects-grid">
+        
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/powerpoint.png" alt="Innovation in IT Presentation" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Presentation of Innovation in IT</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://docs.google.com/presentation/d/1jCZG1qw0Xj-nOX08mg9gTmDUO9Q43e0Y/edit?usp=sharing&ouid=110003420342366412363&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/video.png" alt="Innovation in IT Video" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Video Presentation of Innovation in IT (20 min)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="alert('Video link coming soon!')">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- AFRICAN CULTURE SECTION -->
+      <h2 class="projects-category-title">Aspect of African Culture</h2>
+      <div class="about-containers projects-grid">
+        
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/powerpoint.png" alt="African Culture Presentation" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Presentation of Aspect of African Culture</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="location.href='https://docs.google.com/presentation/d/1wIxyvmEvX07APNx68j9heIvNbei5S5ZR/edit?usp=sharing&ouid=110003420342366412363&rtpof=true&sd=true'">
+              View
+            </button>
+          </div>
+        </div>
+
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/video.png" alt="African Culture Video" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Video Presentation of Aspect of African Culture (20 min)</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="alert('Video link coming soon!')">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODERN SOCIETY CHALLENGES SECTION -->
+      <h2 class="projects-category-title">Modern Society Challenges</h2>
+      <div class="about-containers projects-grid">
+        
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/powerpoint.png" alt="Modern Society Video" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Presentation of Challenges Facing Modern Society</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="alert('Video link coming soon!')">
+              View
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Explore My active social media accounts and online platforms.</p>
+    <h1 class="title contact-title">My Online Presence</h1>
+
+    <div class="cards-container">
+      <div class="card">
+        <img src="./assets/facebook.png" alt="Facebook" class="card-icon" />
+        <h3 class="card-title">Facebook</h3>
+        <p class="card-desc">Follow my official Facebook page for updates, community news and posts.</p>
+        <a class="card-btn" href="https://www.facebook.com/profile.php?id=100094030729520" target="_blank" rel="noopener">Visit</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/twitter.png" alt="Twitter" class="card-icon" />
+        <h3 class="card-title">X</h3>
+        <p class="card-desc">Stay connected via Twitter for short updates and announcements.</p>
+        <a class="card-btn" href="https://x.com/12_ks12" target="_blank" rel="noopener">Visit</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/instagram.jpeg" alt="Instagram" class="card-icon" />
+        <h3 class="card-title">Instagram</h3>
+        <p class="card-desc">See behind-the-scenes photos, stories, and visual highlights.</p>
+        <a class="card-btn" href="https://www.instagram.com/aladeenpaul?igsh=Y2gzOTBhZGVma3Rx" target="_blank" rel="noopener">Visit</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="card-icon" />
+        <h3 class="card-title">LinkedIn</h3>
+        <p class="card-desc">Professional updates, collaborations, and networking.</p>
+        <a class="card-btn" href="https://www.linkedin.com/in/paul-kisilu-0817a4271?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">View</a>
+      </div>
+
+      <div class="card">
+        <img src="./assets/d.jpeg" alt="WhatsApp" class="card-icon" />
+        <h3 class="card-title">WhatsApp</h3>
+        <p class="card-desc">Quick messages and short queries — reach me on WhatsApp.</p>
+        <a class="card-btn" href="https://wa.me/254741133337" target="_blank" rel="noopener">Message</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2026 Kisilu Paul Nzioki. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
